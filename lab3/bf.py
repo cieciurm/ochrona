@@ -4,8 +4,9 @@ password = sys.argv[1]
 letters = string.ascii_letters
 spins = 0
 
-print "~* Brutalny lamacz hasel trojznakowych (male i duzelitery) *~"
+print "~* Brutalny lamacz hasel trojznakowych (male i duze litery) *~"
 print "~* Twoje haslo to: %s *~" % (password)
+print ""
 
 for a in letters:
 	for b in letters:
