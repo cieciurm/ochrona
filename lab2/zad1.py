@@ -15,6 +15,6 @@ for i in b:
 
 table = string.maketrans("abcdefghijklmnopqrstuvwxyz", new_alphabet)
 
-for line in sys.stdin.readlines(): #fileinput.input(sys.stdin):
+for line in sys.stdin.readlines(): 
         line = line.rstrip()
         print string.translate(line, table)

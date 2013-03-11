@@ -1,6 +1,10 @@
-import string, fileinput
+import string, fileinput, sys
 
-shift = input("Podaj przesuniecie: ")
+#shift = input("Podaj przesuniecie: ")
+
+#print sys.argv
+
+shift = int(sys.argv[1])
 
 a = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 b = []
@@ -22,6 +26,6 @@ for i in b:
 
 table = string.maketrans("abcdefghijklmnopqrstuvwxyz", new_alphabet)
 
-for line in fileinput.input():
+for line in sys.stdin.readlines(): #fileinput.input(sys.stdin):
         line = line.rstrip()
         print string.translate(line, table)

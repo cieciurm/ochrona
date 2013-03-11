@@ -11,12 +11,5 @@ for line in sys.stdin.readlines():
                         stat[znak] = 1
 
 
-#sorted_stat = sorted(stat.iteritems(), key=operator.itemgetter(1))
-#sorted_stat.reverse()
-
-
-
-#print sorted_stat
-
 for znak in stat:
         print "%s <=> %d " % (znak, stat[znak])
