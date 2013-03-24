@@ -2,6 +2,7 @@ import sys, re, string
 from math import log
 
 def calculate_entropy():
+	"""Calculates an entropy of given string"""
 	stat = {}     # dictionary - chars and number of repetitions
 	allchar = 0.0 # total number of characters
 	entropy = 0.0 # initial entropy
